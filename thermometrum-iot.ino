@@ -3,19 +3,7 @@
 #include <ArduinoJson.h>
 #include <DHT.h>
 
-// config
-const char* SSID         = "wifi name";
-const char* PASSWORD     = "wifi pass";
-const char* MQTT_BROKER  = "192.168.0.17";
-const int   MQTT_PORT    = 1883;
-
-const char* DEVICE_ID    = "thermometrum-node-03";
-const uint64_t SLEEP_TIME = 60000000; // 1 min
-
-
-
-#define DHTPIN 4
-#define DHTTYPE DHT22
+#include "config.h"
 
 DHT dht(DHTPIN, DHTTYPE);
 WiFiClient espClient;

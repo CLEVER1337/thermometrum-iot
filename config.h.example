@@ -1,0 +1,10 @@
+#define SSID          "wifi name"
+#define PASSWORD      "wifi pass"
+#define MQTT_BROKER   "192.168.0.17"
+#define MQTT_PORT     1883
+
+#define DEVICE_ID     "thermometrum-node-03"
+#define SLEEP_TIME    60000000
+
+#define DHTPIN        4
+#define DHTTYPE       DHT22
